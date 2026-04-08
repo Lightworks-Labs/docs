@@ -2,56 +2,64 @@
 title: Settings
 ---
 
-Settings lets you manage your workspace, connected repositories, members, and integrations. Open it from the gear icon at the bottom of the sidebar.
+Settings is a modal with two sections — **Workspace** (org-level) and **Account** (user-level) — accessible from the gear icon at the bottom of the sidebar.
 
-## General
+## Workspace
 
-Configure workspace-level preferences:
+### Members
 
-- **Workspace name** — the display name shown throughout the app
-- **Dark mode** — toggle between light and dark themes
+Manage access to your connected GitHub repositories. If your workspace has more than one connected repo, a repo selector appears at the top.
 
-## Repositories
+- **Add a member** — enter a GitHub username, choose a role (Read / Write / Admin), and click Add
+- **Change a role** — click the role toggle on any collaborator row to update it immediately
+- **Remove a member** — click the X icon on a collaborator row
 
-Manage the GitHub repositories connected to your workspace.
+Roles map to GitHub collaborator permission levels: Read (pull), Write (push), Admin.
 
-- **Add a repository** — connect a new repo by selecting it from your installed GitHub App repositories
-- **Remove a repository** — disconnect a repo from the workspace; existing records and history are preserved in GitHub
-- **Default repository** — the repo used when creating new records without an explicit target
+### API Tokens
 
-You must have the GitHub App installed on an organization or personal account for its repositories to appear here.
+Generate tokens for programmatic access to the Lightworks API. All token operations require MFA verification.
 
-## Members
+- **Generate** — enter a token name and click Generate; the raw token is shown once in a copy prompt
+- **Revoke** — disables a token; it can be reactivated later
+- **Delete** — permanently removes a revoked token
 
-View and manage who has access to your workspace.
+The workspace's `LIGHTWORKS_ORG_ID` is shown at the bottom of this tab with a copy button.
 
-Each row shows a member's GitHub login, display name, and their role. Roles control what actions a member can take:
+### Billing
 
-| Role | Description |
-|---|---|
-| Owner | Full access — manage members, repos, billing, and all content |
-| Admin | Manage members and repos; cannot change billing |
-| Member | Read and write access to content; cannot manage settings |
-| Contributor | Read-only access; invited via GitHub collaborator status |
+View your current plan and manage your subscription.
 
-### Changing a role
+- **Plan** — shows your active plan (Free, Quality Manager, or Enterprise) with its included features
+- **Change Plan** — opens the plan selection page
+- **Billing Portal** — opens the Stripe portal for invoices, payment methods, and billing history
+- **AI Token Balance** — shown if your plan includes an AI add-on; displays current balance, monthly deposit amount, and next deposit date
 
-Click the role badge next to any member to open an inline role picker. Select a new role to apply it immediately.
+## Account
 
-### Removing a member
+### Account
 
-Hover over a member row and click the remove icon. This revokes their Lightworks access but does not remove them from GitHub.
+Your profile pulled from Clerk and GitHub: avatar, full name, primary email, GitHub handle, company, location, and website.
 
-### Contributors
+### Settings
 
-Contributors are GitHub collaborators who have been granted access to your connected repositories. They are automatically synced — when a collaborator is added or removed in GitHub, their Lightworks access updates within minutes.
+User preferences stored locally:
 
-Contributors use a simplified onboarding flow that only requires MFA setup; they do not need to connect a GitHub account separately.
+- **Auto-commit on navigation** — automatically commits unsaved changes when you navigate away from a record
+- **Appearance** — Light, Dark, or System theme
 
-## Integrations
+### Keyboard
 
-Coming soon — webhook endpoints, Slack notifications, and third-party connectors.
+View and remap keyboard shortcuts. Shortcuts are grouped by category and listed with their current key binding.
 
-## Billing
+- **Remap** — click any shortcut row to enter a new key combination
+- **Reset** — revert an individual shortcut or all overrides to defaults
 
-View your current plan, usage, and manage your subscription. Upgrade to unlock additional features such as eSignatures, advanced access controls, and higher storage limits.
+### Language
+
+Customize the terminology Lightworks uses throughout the interface. Changes apply only to you.
+
+- **Preset** — toggle between Technical (commit, branch, pull request) and Non-Technical (revision, draft, change request) modes
+- **Custom terms** — edit individual terms grouped by domain: Version Control, Workflow & Actions, Document & File
+
+A blue dot marks any term you've customized. Click a term to edit it inline; click the reset icon to restore the default.
