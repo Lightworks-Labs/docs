@@ -6,8 +6,8 @@ Welcome to the Lightworks documentation. Find guides and references for everythi
 
 ## Getting started
 
-- [Commands](commands) — keyboard shortcuts, slash commands, and the command palette
-- [Mentions](mentions) — tag GitHub collaborators inline with `@username`
+- [Commands](/docs/commands) — keyboard shortcuts, slash commands, and the command palette
+- [Mentions](/docs/mentions) — tag GitHub collaborators inline with `@username`
 
 ## Overview
 
