@@ -11,4 +11,5 @@ Welcome to the Lightworks documentation. Find guides and references for everythi
 - [Pull Requests](/docs/pull-requests) — review, comment, and merge changes
 - [Releases](/docs/releases) — create versioned GitHub releases with PDF artifacts
 - [eSignatures](/docs/esignatures) — MFA-verified electronic signatures on records
+- [Marketplace](/docs/marketplace) — browse and install Community and Premium templates
 - [Settings](/docs/settings) — workspace, repositories, members, and billing
