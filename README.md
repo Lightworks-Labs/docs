@@ -4,6 +4,7 @@ title: Lightworks Documentation
 
 Welcome to the Lightworks documentation. Find guides and references for everything in the platform.
 
+- [Databases](/docs/databases) — schemas, property types, views, and records
 - [Commands](/docs/commands) — keyboard shortcuts, slash commands, and the command palette
 - [Search](/docs/search) — search documents, records, and commands
 - [Mentions](/docs/mentions) — tag GitHub collaborators inline with `@username`
