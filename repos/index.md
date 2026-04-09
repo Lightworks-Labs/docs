@@ -1,5 +1,5 @@
 ---
-title: Connecting a Repository
+title: Repos
 ---
 
 Lightworks reads and writes files directly in your GitHub repository. You need to connect at least one repository to get started.
@@ -24,8 +24,10 @@ Choose a repository from the dropdown. Private repositories are marked with a lo
 
 ### 3. Choose a connection type
 
-- **Subfolder** (recommended) — Lightworks stores files in a specific folder within the repo (e.g. `docs/qms`). Good for monorepos or keeping quality docs separate from source code.
-- **Full repository** — the entire repository is used as the workspace.
+**Subfolder** is strongly recommended for most teams. When your QMS records live in a subfolder of the same repository as your source code, Premium templates can take full advantage of GitHub Actions automation — test results are automatically linked to the records that track them, and your SBOM is generated directly from your project's dependencies. The traceability matrix fills itself in because the code and the QMS are in the same repo.
+
+- **Subfolder** (recommended) — Lightworks stores files in a specific folder within the repo (e.g. `docs/qms`). The rest of the repository remains untouched.
+- **Full repository** — the entire repository is used as the workspace. Best suited for dedicated documentation repos with no source code.
 
 ### 4. Set the default branch
 

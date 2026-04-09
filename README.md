@@ -4,7 +4,7 @@ title: Lightworks Documentation
 
 Welcome to the Lightworks documentation. Find guides and references for everything in the platform.
 
-- [Connecting a Repository](/docs/connecting-a-repo) — install the GitHub App, connect, and disconnect repositories
+- [Repos](/docs/repos) — install the GitHub App, connect, and disconnect repositories
 - [Pages](/docs/pages) — nesting, properties, editing, and page actions
 - [Databases](/docs/databases) — schemas, property types, views, and records
 - [Commands](/docs/commands) — keyboard shortcuts, slash commands, and the command palette
