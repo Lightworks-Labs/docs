@@ -81,6 +81,14 @@ Property order can be changed by dragging rows. New properties added to a page a
 
 If a page lives inside a database (a folder with a `_schema.json`), its properties are defined by that schema. The schema controls which properties appear, their types, and their options. Standalone pages can also have ad-hoc properties without a schema.
 
+## Page history
+
+Every change to a page is tracked as a git commit in your repository. Open the `...` menu and click **View history** to see the full commit history for that page.
+
+The history modal lists each commit with its message, author, and timestamp. Click any entry to open a read-only view of the page exactly as it was at that point in time — content, properties, and all. This lets you review what changed between versions or recover content from an earlier state.
+
+History is per-page, not per-repository — only commits that touched the current page's file are shown.
+
 ## Page actions
 
 Open the `...` menu in the toolbar or right-click a page in the sidebar to access:
