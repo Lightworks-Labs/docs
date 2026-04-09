@@ -15,3 +15,4 @@ Welcome to the Lightworks documentation. Find guides and references for everythi
 - [eSignatures](/docs/esignatures) — MFA-verified electronic signatures on records
 - [Marketplace](/docs/marketplace) — browse and install Community and Premium templates
 - [Settings](/docs/settings) — workspace, repositories, members, and billing
+- [Developers](/docs/developers) — API authentication, tokens, and endpoints
