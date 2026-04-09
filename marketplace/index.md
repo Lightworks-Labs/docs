@@ -8,15 +8,15 @@ The Marketplace is where you browse, install, and manage pre-built templates for
 
 There are two kinds of templates:
 
-- **Database templates** — a complete database with schema, fields, views, and optional GitHub Actions workflows. Installing one creates a pull request that adds those files to your repository.
+- **Database templates** — a complete database (or set of related databases) with schema, fields, views, and automation. Installing one creates a pull request that adds those files to your repository.
 - **Record templates** — pre-filled field defaults for records in a specific database. Installing one makes that template available when creating new records.
 
 Templates come from two tiers:
 
 | Tier | Description |
 |---|---|
-| **Premium** | Curated templates for regulated industries. Requires a paid plan. |
-| **Community** | Open templates contributed by the community. Always free. |
+| **Premium** | Multi-database bundles with cross-database relationships and GitHub Actions automation. Requires a paid plan. |
+| **Community** | Single-database templates without GitHub Actions. Always free. |
 
 ## Browsing
 
