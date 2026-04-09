@@ -35,7 +35,6 @@ Type `/` inside any document to open the block insertion menu.
 
 ## Media & embeds
 
-- `/Image` — embed an image by URL
 - `/Code Block` — code block with syntax highlighting
 - `/Equation` — KaTeX / LaTeX math block
 - `/Callout` — highlighted callout block
