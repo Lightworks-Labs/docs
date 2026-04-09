@@ -1,5 +1,5 @@
 ---
-title: /Commands
+title: Commands
 ---
 
 Type `/` inside any document to open the block insertion menu.
