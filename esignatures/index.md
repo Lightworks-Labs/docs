@@ -34,6 +34,8 @@ approval:
 
 When a pull request is configured to require signatures before merge, reviewers see a **Sign & Merge** button. Clicking it opens the MFA modal — enter your 6-digit authenticator code to confirm. On success, the signature is written to the record and the PR is merged in one atomic operation.
 
+> **Important:** Always merge pull requests through Lightworks, not directly through GitHub. Merging from GitHub bypasses the signing step — the MFA verification and signature metadata will not be captured, and the record will remain unsigned.
+
 ### Independent record signing
 
 Any `esign` property in a record can also be signed independently, outside of a PR. Open the record, click the unsigned signature chip, and complete MFA verification. The change is committed directly to the branch.
