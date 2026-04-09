@@ -8,7 +8,7 @@ Settings is a modal with two sections — **Workspace** (org-level) and **Accoun
 
 ### Members
 
-Manage access to your connected GitHub repositories. If your workspace has more than one connected repo, a repo selector appears at the top.
+Manage access to your connected GitHub repositories. All plans include unlimited seats — invite your entire team without worrying about per-seat costs. If your workspace has more than one connected repo, a repo selector appears at the top.
 
 - **Add a member** — enter a GitHub username, choose a role (Read / Write / Admin), and click Add
 - **Change a role** — click the role toggle on any collaborator row to update it immediately
