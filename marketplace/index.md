@@ -16,7 +16,7 @@ Templates come from two tiers:
 | Tier | Description |
 |---|---|
 | **Premium** | Multi-database bundles with cross-database relationships and GitHub Actions automation. Requires a paid plan. |
-| **Community** | Single-database templates without GitHub Actions. Always free. |
+| **Community** | Open-source, single-database templates without GitHub Actions. Always free — contributions welcome. |
 
 ## Browsing
 
