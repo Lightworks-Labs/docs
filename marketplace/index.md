@@ -48,7 +48,7 @@ Shows two tables:
 
 ## Uninstalling a database template
 
-From the template detail page, click **Uninstall**. Lightworks opens a pull request to remove the installed files. Merge the PR to complete the uninstall.
+From the template detail page, click **Uninstall**. Lightworks opens a pull request that archives the installed files rather than deleting them. Merge the PR to complete the uninstall.
 
 ## Installing a record template
 
