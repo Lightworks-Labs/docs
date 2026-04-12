@@ -164,6 +164,39 @@ GET /api/v1/databases?orgId=<orgId>&repo=<repo>
 }
 ```
 
+### Get a database
+
+Returns the database and its full schema, including all property definitions.
+
+```
+GET /api/v1/databases/<id>?orgId=<orgId>&repo=<repo>
+```
+
+For nested databases, the `id` contains slashes — pass them as path segments (e.g. `/api/v1/databases/requirements/req-a3f7k2/tests`).
+
+**Response**
+
+```json
+{
+  "object": "database",
+  "id": "tests",
+  "name": "tests",
+  "parent": { "type": "workspace" },
+  "schema": {
+    "properties": {
+      "title":            { "name": "title",            "type": "text",   "required": true },
+      "Last_run_status":  { "name": "Last_run_status",  "type": "status", "required": false, "config": { "options": [...] } },
+      "Last_run_at":      { "name": "Last_run_at",      "type": "date",   "required": false },
+      "Run_url":          { "name": "Run_url",           "type": "url",    "required": false }
+    },
+    "primaryKey": "title",
+    "defaultView": "table"
+  }
+}
+```
+
+Use this to discover the exact property keys and types before writing records.
+
 ---
 
 ## Records
@@ -230,7 +263,7 @@ Returns the full record including its markdown `body`. The `path` field is the f
 
 ### Create a record
 
-Mints a new record ID from the database prefix, writes a page bundle to the PR branch, and returns the new record.
+Mints a new record ID from the database prefix, writes a page bundle to the PR branch, and returns the new record. Properties are validated against the database schema — unknown keys and type mismatches return `400`.
 
 ```
 POST /api/v1/records
@@ -264,7 +297,7 @@ POST /api/v1/records
 
 ### Update a record
 
-Merges the provided `properties` into the existing record frontmatter. Properties not included in the request are left unchanged.
+Merges the provided `properties` into the existing record frontmatter. Properties not included in the request are left unchanged. Provided properties are validated against the database schema.
 
 ```
 PATCH /api/v1/records/<id>
@@ -334,7 +367,7 @@ The typical flow:
 
 1. **Create** a PR → get a `prId` and a branch (`lw/api/<id>`)
 2. **Write** records — each write commits to that branch
-3. **Finalize** when the originator PR merges → opens a draft PR in your repo for review and signature
+3. **Finalize** when the originator PR merges → opens a PR in your repo for review and signature
 4. **Cancel** if the originator PR closes without merging → closes the branch
 
 ### Create a PR
@@ -373,7 +406,7 @@ If a PR already exists for this originator, `created` will be `false` and the ex
 
 ### Finalize a PR
 
-Called when the originator PR is merged. Opens a draft pull request in the QMS repo for review and signature. Before merging, Lightworks automatically stamps a stable `id` into any records that were created through the UI rather than the API.
+Called when the originator PR is merged. Opens a pull request in the QMS repo for review and signature. Before merging, Lightworks automatically stamps a stable `id` into any records that were created through the UI rather than the API.
 
 ```
 POST /api/v1/prs/<prId>/finalize
@@ -384,9 +417,13 @@ POST /api/v1/prs/<prId>/finalize
 ```json
 {
   "orgId": "<orgId>",
-  "repo": "<repo>"
+  "repo": "<repo>",
+  "prTitle": "SBOM update for v2.3.1",
+  "prBody": "Automated SBOM record created by CI."
 }
 ```
+
+`prTitle` and `prBody` are optional. If omitted, the title is derived from the records touched on the branch (e.g. `sbom/sbom-k4np8w, requirements/requ-a3f7k2`) and the body includes a standard Part 11 attestation block.
 
 **Response**
 
@@ -551,11 +588,18 @@ Premium templates ship with pre-built versions of this workflow, pre-configured 
 
 ---
 
+## Exploring data
+
+The REST API is designed for writing records from automated pipelines. For ad-hoc exploration, auditing, and cross-database queries, use the [Console](/docs/console) — it lets you run [LQL](/docs/console) queries directly against your databases without writing any code.
+
+---
+
 ## Error reference
 
 | Status | Meaning |
 |---|---|
 | `400` | Bad request — missing or invalid parameter |
+| `422` | Property validation failed — `details` object maps each invalid property key to an error message |
 | `401` | Invalid or expired API token |
 | `403` | Token lacks the required scope, or repo is not connected to this org |
 | `404` | Record or PR not found |
