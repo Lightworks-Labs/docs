@@ -590,7 +590,7 @@ Premium templates ship with pre-built versions of this workflow, pre-configured 
 
 ## Exploring data
 
-The REST API is designed for writing records from automated pipelines. For ad-hoc exploration, auditing, and cross-database queries, use the [Console](/docs/console) — it lets you run [LQL](/docs/console) queries directly against your databases without writing any code.
+The REST API is designed for writing records from automated pipelines. For ad-hoc exploration, auditing, and cross-database queries, use the [Console](/docs/console) — it lets you run [LQL](/docs/console) queries directly against your databases without setting up any infrastructure.
 
 ---
 
