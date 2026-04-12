@@ -57,3 +57,11 @@ In Table view, click a column header to sort ascending or descending. Use the fi
 ## Board grouping
 
 Board view groups records by a `status` or `select` property. Lightworks auto-detects the best grouping field from the schema. Drag cards between columns to update that property — the change is committed to the record's frontmatter.
+
+---
+
+## Querying and accessing data
+
+For deeper exploration, use the [Console](/docs/console) to run LQL queries across your databases — filter, join, and trace relationships, or compare snapshots over time with temporal queries.
+
+To read and write records programmatically from GitHub Actions or external tooling, see the [Developers](/docs/developers) reference for the REST API.

@@ -8,6 +8,14 @@ Open the Console from the sidebar under **Console**.
 
 ---
 
+## What LQL isn't
+
+LQL is a read-only query language for exploring and auditing your data. It does not write, update, or delete records. All mutations go through the editor or the [REST API](/docs/developers).
+
+LQL is also not a general-purpose SQL engine. It operates on the pre-built search index in your repository — so queries are only as fresh as your last index run, and the available fields are whatever your `_schema.json` files define. Complex aggregations (SUM, GROUP BY, subqueries) are not supported.
+
+---
+
 ## Running a query
 
 Type a query in the editor and press **⌘↵** (Mac) or **Ctrl↵** (Windows) to run it, or click the **Run** button.
