@@ -2,7 +2,7 @@
 title: Console
 ---
 
-The Console is an interactive query environment for your Lightworks databases. It uses **LQL (Lightworks Query Language)** — a SQL-like language designed for querying structured markdown records and tracing relationships across databases.
+The Console is an interactive query environment for your Lightworks databases. It uses **LQL (Lightworks Query Language)** — a SQL-like domain specific language designed for querying structured markdown records and tracing relationships across databases.
 
 Open the Console from the sidebar under **Console**.
 
