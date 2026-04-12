@@ -68,3 +68,9 @@ The index is considered stale when a user commit on main is newer than the last 
 - Both pages and database records
 
 Files in `node_modules/`, `.git/`, and `vendor/` are excluded automatically.
+
+---
+
+## Structured queries
+
+Search is designed for quick lookup. For filtering records by property values, joining databases, or querying your data at a point in time, use the [Console](/docs/console) — it supports full [LQL](/docs/console) queries with WHERE clauses, JOINs, and temporal snapshots.

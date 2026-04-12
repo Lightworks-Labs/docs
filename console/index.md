@@ -14,6 +14,8 @@ LQL is a read-only query language for exploring and auditing your data. It does 
 
 LQL is also not a general-purpose SQL engine. It operates on the pre-built search index in your repository — so queries are only as fresh as your last index run, and the available fields are whatever your `_schema.json` files define. Complex aggregations (SUM, GROUP BY, subqueries) are not supported.
 
+For quick keyword lookup across pages and records, use [Search](/docs/search) instead — it's faster for finding a specific document and doesn't require writing a query.
+
 ---
 
 ## Running a query
