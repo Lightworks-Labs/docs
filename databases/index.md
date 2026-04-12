@@ -4,6 +4,14 @@ title: Databases
 
 A database is a folder in your repository that contains a schema and a collection of records. Each record is a markdown document with structured properties defined by the schema.
 
+## What databases aren't
+
+Lightworks databases are not a relational database engine. There is no query planner, no indexes beyond the search index built by the GitHub Action, and no transactions. Records are markdown files on disk — reads go through the GitHub API and writes produce git commits.
+
+They are also not a replacement for a spreadsheet or a general-purpose data store. They work best for structured, human-authored content that benefits from version history, review workflows, and audit trails — requirements, risks, test cases, change records, and similar QMS artifacts.
+
+---
+
 ## File structure
 
 ```
