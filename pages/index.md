@@ -79,7 +79,34 @@ Property order can be changed by dragging rows. New properties added to a page a
 
 ### Schema
 
-If a page lives inside a database (a folder with a `_schema.json`), its properties are defined by that schema. The schema controls which properties appear, their types, and their options. Standalone pages can also have ad-hoc properties without a schema.
+If a page lives inside a database (a folder with a `_schema.json`), the schema controls which properties appear, their types, and their options.
+
+Standalone pages store their schema inline as a `_schema` key in the YAML frontmatter. This is written automatically by Lightworks whenever you define or update property types on a standalone page — you don't need to manage it manually.
+
+```yaml
+---
+title: Incident Report
+status: in-progress
+severity: high
+_schema:
+  status:
+    type: status
+    config:
+      options:
+        - { value: open, label: Open, color: red }
+        - { value: in-progress, label: In Progress, color: yellow }
+        - { value: resolved, label: Resolved, color: green }
+  severity:
+    type: select
+    config:
+      options:
+        - { value: high, label: High, color: red }
+        - { value: medium, label: Medium, color: yellow }
+        - { value: low, label: Low, color: blue }
+---
+```
+
+The `_schema` key uses the same structure as a database `_schema.json` — each entry is keyed by property name and includes a `type` and optional `config` with options and colors. This means a standalone page can be promoted to a full database later by moving its `_schema` content to a `_schema.json` file and removing the inline key.
 
 ## Page history
 
