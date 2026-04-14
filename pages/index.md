@@ -79,9 +79,7 @@ Property order can be changed by dragging rows. New properties added to a page a
 
 ### Schema
 
-If a page lives inside a database (a folder with a `_schema.json`), the schema controls which properties appear, their types, and their options.
-
-Standalone pages store their schema inline as a `_schema` key in the YAML frontmatter. This is written automatically by Lightworks whenever you define or update property types on a standalone page — you don't need to manage it manually.
+A schema defines which properties a page has, their types, and their options. Pages inside a database inherit their schema from the database's `_schema.json`. Standalone pages store their schema inline as a `_schema` key in the YAML frontmatter. This is written automatically by Lightworks whenever you define or update property types on a standalone page — you don't need to manage it manually.
 
 ```yaml
 ---
