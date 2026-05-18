@@ -10,6 +10,7 @@ Welcome to the Lightworks documentation. Find guides and references for everythi
 - [Developers](/docs/developers) — API authentication, tokens, and endpoints
 - [eSignatures](/docs/esignatures) — MFA-verified electronic signatures on records
 - [Marketplace](/docs/marketplace) — browse and install Community and Premium templates
+- [MCP Server](/docs/mcp) — connect AI agents to read and edit your QMS records
 - [Mentions](/docs/mentions) — tag GitHub collaborators inline with `@username`
 - [Pages](/docs/pages) — nesting, properties, editing, and page actions
 - [Pull Requests](/docs/pull-requests) — review, comment, and merge changes
