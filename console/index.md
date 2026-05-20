@@ -95,6 +95,40 @@ WHERE t.status = 'passed'
 
 Use `LEFT JOIN` to include requirements even when no matching test exists — those rows show a **GAP** indicator.
 
+### GRAPH
+
+Visualize relationships across databases as an interactive 3D graph. Nodes are records; edges are relation fields.
+
+```lql
+-- All records and all relationships in the repo
+GRAPH *
+
+-- Only records connected along a specific path
+GRAPH requirements → tests → results
+```
+
+`GRAPH *` loads every database and shows all records — including isolated ones with no relationships. Use it to explore the full shape of your data.
+
+`GRAPH db → db → db` restricts to the listed collections and hides records that have no edges, so you see only the connected topology.
+
+Both `→` and `->` are accepted as the chain separator.
+
+**Interacting with the graph**
+
+- Click a node to select it. The selected node pulses and grows to highlight it.
+- Shift-click a pinned node to release it.
+- Click a collection in the legend to toggle its nodes on or off without restarting the layout.
+- The node count and edge count are shown in the result banner.
+
+All temporal modifiers (`AT`, `AT BRANCH`, `AT TAG`, `AT COMMIT`) work with GRAPH queries:
+
+```lql
+GRAPH requirements → tests
+AT BRANCH 'release/v2.0'
+```
+
+---
+
 ### TRACE
 
 Trace a relationship chain across multiple databases in order:
