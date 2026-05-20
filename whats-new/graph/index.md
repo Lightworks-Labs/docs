@@ -1,9 +1,7 @@
 ---
-title: GRAPH — interactive relationship visualization
+title: Graph Relationships
 date: '2026-05-20'
 ---
-
-# GRAPH — interactive relationship visualization
 
 The Console now supports a new `GRAPH` query type that renders your database relationships as an interactive 3D force-directed graph.
 
@@ -27,7 +25,3 @@ AT BRANCH 'main'
 - **Click a node** to select it — it pulses and enlarges to stand out
 - **Click a collection** in the legend to toggle its nodes on or off without restarting the layout
 - **Shift-click** a pinned node to release it
-
-## Relation fields in table view
-
-Relation fields in database tables now show the linked record's title with a page icon, rather than a raw ID or count. Hover over the table cell to see all linked records for that row.
