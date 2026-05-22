@@ -1,5 +1,8 @@
 ---
 title: Marketplace
+section: Quality
+sectionOrder: 2
+order: 4
 ---
 
 The Marketplace is where you browse, install, and manage pre-built templates for your repository. Open it from the sidebar navigation.

@@ -1,5 +1,8 @@
 ---
-title: Developers
+title: API Reference
+section: Platform
+sectionOrder: 3
+order: 4
 ---
 
 Lightworks provides a REST API for reading and writing records programmatically. It is designed for use in GitHub Actions workflows — particularly for premium templates like Traceability Matrix and SBOM that automate QMS record creation as part of your CI/CD pipeline.

@@ -1,5 +1,8 @@
 ---
 title: Releases
+section: Quality
+sectionOrder: 2
+order: 2
 ---
 
 Releases create a versioned GitHub release from your repository content, with optional PDF artifacts attached.

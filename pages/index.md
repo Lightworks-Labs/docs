@@ -1,5 +1,6 @@
 ---
 title: Pages
+order: 1
 ---
 
 A page is a markdown document stored in your connected GitHub repository. Pages can contain rich content, structured properties, and nested sub-pages — all version-controlled as plain files.

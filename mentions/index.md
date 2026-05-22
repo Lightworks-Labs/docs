@@ -1,5 +1,6 @@
 ---
 title: Mentions
+order: 4
 ---
 
 Lightworks supports GitHub user mentions inside documents. Type `@` followed by a username to tag a collaborator inline.

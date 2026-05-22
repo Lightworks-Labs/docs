@@ -1,5 +1,8 @@
 ---
 title: Settings
+section: Platform
+sectionOrder: 3
+order: 3
 ---
 
 Settings is a modal with two sections — **Account** (user-level) and **Workspace** (org-level) — accessible from the gear icon at the bottom of the sidebar.
