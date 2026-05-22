@@ -1,5 +1,8 @@
 ---
 title: eSignatures
+section: Quality
+sectionOrder: 2
+order: 3
 ---
 
 eSignatures let you capture legally binding electronic signatures directly within Lightworks records. Each signature is verified with multi-factor authentication and permanently stored in the document's frontmatter.

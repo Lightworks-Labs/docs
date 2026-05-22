@@ -1,5 +1,6 @@
 ---
 title: Commands
+order: 3
 ---
 
 Type `/` inside any document to open the block insertion menu.

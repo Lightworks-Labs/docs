@@ -1,5 +1,5 @@
 ---
-title: Lightworks Documentation
+title: Overview
 ---
 
 Welcome to the Lightworks documentation. Find guides and references for everything in the platform.

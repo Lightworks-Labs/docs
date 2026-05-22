@@ -1,5 +1,6 @@
 ---
 title: Databases
+order: 2
 ---
 
 A database is a folder in your repository that contains a schema and a collection of records. Each record is a markdown document with structured properties defined by the schema.

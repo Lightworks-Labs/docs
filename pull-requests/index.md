@@ -1,5 +1,8 @@
 ---
 title: Pull Requests
+section: Quality
+sectionOrder: 2
+order: 1
 ---
 
 Every change in Lightworks is committed to a branch and proposed as a pull request before it reaches your main branch. Pull requests are visible in the sidebar under the PR icon.

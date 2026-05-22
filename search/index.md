@@ -1,5 +1,6 @@
 ---
 title: Search
+order: 5
 ---
 
 Open search with **Cmd+K** (Mac) or **Ctrl+K** (Windows/Linux). Search covers documents, database records, and workspace commands at once.

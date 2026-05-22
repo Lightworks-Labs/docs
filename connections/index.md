@@ -1,5 +1,8 @@
 ---
 title: Connections
+section: Platform
+sectionOrder: 3
+order: 6
 ---
 
 Connections link Lightworks to external tools so you can reference their data inside your records. Each connection is authorized once per workspace via OAuth and then becomes available as both a property type on any database and a slash command inside the editor.

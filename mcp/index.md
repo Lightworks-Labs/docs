@@ -1,5 +1,8 @@
 ---
 title: MCP Server
+section: Platform
+sectionOrder: 3
+order: 5
 ---
 
 Lightworks MCP ([Model Context Protocol](https://modelcontextprotocol.io)) server lets AI agents — Claude, ChatGPT, Cursor, Copilot, and any other MCP-compatible client — read and edit your QMS records on your behalf. The server speaks the same record, database, and PR model as the [REST API](/docs/developers), so writes still flow through a pull request for human review and signature.

@@ -1,6 +1,9 @@
 ---
 title: eSignatures
 date: April 8, 2026
+section: What's New
+sectionOrder: 4
+order: 2
 ---
 
 Capture legally binding electronic signatures directly on records. Each signature is verified with TOTP multi-factor authentication and permanently stored in the document's frontmatter alongside a SHA-256 hash, timestamp, and session metadata — meeting ESIGN Act and UETA requirements.

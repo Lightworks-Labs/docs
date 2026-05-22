@@ -1,5 +1,8 @@
 ---
 title: Repos
+section: Platform
+sectionOrder: 3
+order: 2
 ---
 
 Lightworks reads and writes files directly in your GitHub repository. You need to connect at least one repository to get started.

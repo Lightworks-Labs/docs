@@ -1,6 +1,9 @@
 ---
 title: Marketplace
 date: April 5, 2026
+section: What's New
+sectionOrder: 4
+order: 5
 ---
 
 Browse and install database and record templates from the Marketplace. Premium templates are multi-database bundles with cross-database relationships and GitHub Actions automation. Community templates are open-source, single-database templates — contributions welcome.
