@@ -8,8 +8,8 @@ Connections link Lightworks to external tools so you can reference their data in
 
 | Connection | Reference | Scopes |
 |---|---|---|
-| Linear | Issues across your Linear workspace | `read` |
-| Jira | Issues across your Jira sites | `read` |
+| [Linear](https://linear.app) | Issues across your Linear workspace | `read` |
+| [Jira](https://www.atlassian.com/software/jira) | Issues across your Jira sites | `read` |
 
 Both connections are read-only — Lightworks fetches issue metadata for display but never writes back to Linear or Jira.
 
