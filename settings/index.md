@@ -26,6 +26,15 @@ Generate tokens for programmatic access to the Lightworks API. All token operati
 
 The workspace's `LIGHTWORKS_ORG_ID` is shown at the bottom of this tab with a copy button.
 
+### Connections
+
+Authorize and manage third-party integrations. See [Connections](/docs/connections) for what each one enables.
+
+- **Connect** — start the provider's OAuth flow; on success the row flips to **Connected** with the authorizing user, the date, and the granted scopes
+- **Disconnect** — revoke Lightworks' stored OAuth token; existing references in records are preserved but stop fetching live metadata until reconnected
+
+Only workspace admins can connect or disconnect a provider. Linear and Jira are available today, both with `read` scope.
+
 ### Billing
 
 View your current plan and manage your subscription.

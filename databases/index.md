@@ -41,6 +41,8 @@ The `_schema.json` file defines the property types, default views, and view conf
 | `people` | Multiple GitHub collaborators |
 | `relation` | Link to a record in another database |
 | `esign` | Electronic signature with login, name, and timestamp |
+| `linear` | Reference to a [Linear](/docs/connections) issue — requires the Linear connection |
+| `jira` | Reference to a [Jira](/docs/connections) issue — requires the Jira connection |
 
 ## Views
 

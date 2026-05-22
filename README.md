@@ -5,6 +5,7 @@ title: Lightworks Documentation
 Welcome to the Lightworks documentation. Find guides and references for everything in the platform.
 
 - [Commands](/docs/commands) — keyboard shortcuts, slash commands, and the command palette
+- [Connections](/docs/connections) — link Linear, Jira, and other external tools to your records
 - [Console](/docs/console) — query databases with LQL
 - [Databases](/docs/databases) — schemas, property types, views, and records
 - [Developers](/docs/developers) — API authentication, tokens, and endpoints

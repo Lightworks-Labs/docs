@@ -44,3 +44,10 @@ Type `/` inside any document to open the block insertion menu.
 
 - `/Page` — create and link a new sub-page
 - `/Link to page` — link to an existing page
+
+## Connections
+
+Available once the corresponding provider is connected in **Settings → Connections**. See [Connections](/docs/connections).
+
+- `/Linear ticket` — insert an inline reference to a Linear issue
+- `/Jira issue` — insert an inline reference to a Jira issue
