@@ -1,5 +1,5 @@
 ---
-title: Connections
+title: Linear and Jira Connections
 date: May 22, 2026
 ---
 
