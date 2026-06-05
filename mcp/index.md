@@ -1,11 +1,11 @@
 ---
-title: MCP Server
+title: Lightworks MCP
 section: Platform
 sectionOrder: 3
 order: 5
 ---
 
-Lightworks MCP ([Model Context Protocol](https://modelcontextprotocol.io)) server lets AI agents — Claude, ChatGPT, Cursor, Copilot, and any other MCP-compatible client — read and edit your QMS records on your behalf. The server speaks the same record, database, and PR model as the [REST API](/docs/developers), so writes still flow through a pull request for human review and signature.
+Lightworks MCP ([Model Context Protocol](https://modelcontextprotocol.io)) server lets AI agents — Claude, ChatGPT, Cursor, VS Code, and any other MCP-compatible client — read and edit your QMS records on your behalf. The server speaks the same record, database, and PR model as the [REST API](/docs/developers), so writes still flow through a pull request for human review and signature.
 
 ## Endpoint
 
@@ -15,37 +15,36 @@ https://app.lightworks.md/api/mcp
 
 ## Authentication
 
-Authenticate with a Lightworks API token sent as `Authorization: Bearer <token>`. Generate one from **Settings → API Tokens**:
+Supported clients authenticate automatically via OAuth — no API key needed. Open **Settings → Lightworks MCP** and click **Connect** next to your client.
+
+For clients not listed, you can authenticate with a Lightworks API token:
+
+```
+Authorization: Bearer YOUR_TOKEN
+```
+
+Generate one from **Settings → API Tokens**:
 
 - **Read** tokens (`read:databases`) work on every plan
 - **Write** tokens (`read:databases` + `write:databases`) require the paid plan
 
 Tokens can be revoked or reactivated at any time. The workspace's `LIGHTWORKS_ORG_ID` is shown at the bottom of the API Tokens tab.
 
+## Supported clients
+
+| Client | Auth |
+|---|---|
+| Claude (Desktop, Web & Code) | OAuth |
+| ChatGPT | OAuth |
+| Cursor | OAuth |
+| VS Code | OAuth |
+| Any other MCP client | Bearer token |
+
 ## Connecting a client
 
-Open **Settings → MCP Server** to copy a ready-made config for your client.
+Open **Settings → Lightworks MCP** and click **Connect** next to your client. You'll be redirected through OAuth and returned to the settings panel automatically.
 
-### Claude Desktop
-
-Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) or `%APPDATA%\Claude\claude_desktop_config.json` (Windows):
-
-```json
-{
-  "mcpServers": {
-    "lightworks": {
-      "url": "https://app.lightworks.md/api/mcp",
-      "headers": {
-        "Authorization": "Bearer YOUR_TOKEN"
-      }
-    }
-  }
-}
-```
-
-### Cursor, Claude Code, VS Code
-
-The Settings → MCP Server panel includes a tab for each client with the exact file path and snippet to paste.
+For clients not listed, see the bearer token instructions above and refer to your client's MCP documentation for the config format.
 
 ## Available tools
 
