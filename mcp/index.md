@@ -15,7 +15,7 @@ https://app.lightworks.md/api/mcp
 
 ## Authentication
 
-Supported clients authenticate automatically via OAuth — no API key needed. Open **Settings → Lightworks MCP** and click **Connect** next to your client.
+Supported clients authenticate automatically via OAuth or API Token. Open **Settings → Lightworks MCP** and click **Connect** next to your client.
 
 For clients not listed, you can authenticate with a Lightworks API token:
 
